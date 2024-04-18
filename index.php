@@ -18,7 +18,7 @@ public function getTitle(){
     public function __construct($title, $language, $vote) {
         $this->title = $title;
         $this->language = $language;
-        $this->vote = $vote;
+        $this->vote = max(1, min($vote, 10));;
     }
 
     
@@ -26,19 +26,20 @@ public function getTitle(){
 
 }
 
-$productionFirst = new Production('First Production', 'English', 1);
+$productionFirst = new Production("Harry Potter: L'Ordine Della Fenice", 'Italiano', 10);
+
+echo "Produzione 1:<br>";
+echo $productionFirst->getTitle()."<br>";
+echo $productionFirst->getLanguage()."<br>";
+echo $productionFirst->getVote()."<br> <br>";
 
 
-echo $productionFirst->getTitle();
-echo $productionFirst->getLanguage();
-echo $productionFirst->getVote();
+$productionSecond = new Production('Natale a Miami', 'Italiano', 5);
 
-
-$productionSecond = new Production('Seconda Produzione', 'Italiano', 5);
-
-echo $productionSecond->getTitle();
-echo $productionSecond->getLanguage();
-echo $productionSecond->getVote();
+echo "Produzione 2:<br>";
+echo $productionSecond->getTitle()."<br>";
+echo $productionSecond->getLanguage()."<br>";
+echo $productionSecond->getVote()."<br>";
 
 
 ?>
