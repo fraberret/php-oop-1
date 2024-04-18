@@ -3,8 +3,8 @@
 require_once __DIR__ . '/Models/Productions.php';
 
 $productions =[
-    new Production("Film1", "Italiano", 8),
-    new Production("Serie TV1", "Inglese", 9)
+    new Production("Harry Potter e Il Calice Di Fuoco", "Italiano", 8),
+    new Production("Natale A Miami", "Italiano", 9)
 ];
 
 ?>
