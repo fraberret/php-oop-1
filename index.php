@@ -1,30 +1,6 @@
 <?php
 
-class Production{
-    public $title;
-    public $language;
-    public $vote;
-
-public function getTitle(){
-        return $this->title; 
-    }
-    public function getLanguage(){
-        return $this->language; 
-    }
-    public function getVote(){
-        return $this->vote; 
-    }
-
-    public function __construct($title, $language, $vote) {
-        $this->title = $title;
-        $this->language = $language;
-        $this->vote = max(1, min($vote, 10));;
-    }
-
-    
-
-
-}
+require_once __DIR__ . '/Models/Productions.php';
 
 $productionFirst = new Production("Harry Potter: L'Ordine Della Fenice", 'Italiano', 10);
 
