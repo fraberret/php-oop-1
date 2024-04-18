@@ -7,13 +7,19 @@ class Production{
 
 }
 
-$productionfirst = new Production();
-$productionfirst -> title='First Production';
-$productionfirst -> language='English';
-$productionfirst -> vote='1';
+$productionFirst = new Production();
+$productionFirst -> title='First Production';
+$productionFirst -> language='English';
+$productionFirst -> vote='1';
 
 
-var_dump($productionfirst)
+var_dump($productionFirst);
 
+$productionSecond = new Production();
+$productionSecond -> title='Seconda Produzione';
+$productionSecond-> language='Italiano';
+$productionSecond-> vote='5';
+
+var_dump($productionSecond);
 
 ?>
