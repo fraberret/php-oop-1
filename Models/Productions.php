@@ -18,10 +18,25 @@ class Production{
     public function __construct($title, $language, $vote) {
         $this->title = $title;
         $this->language = $language;
-        $this->vote = max(1, min($vote, 10));;
+        $this->vote = max(1, min($vote, 10));
     }
 
-    
 
 
 }
+
+class Movie extends Production
+{
+    public $profitti='1';
+    public $durata;
+
+    public function getProfitti(){
+        return $this->profitti; 
+    }
+
+
+
+}
+
+
+
