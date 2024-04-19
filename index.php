@@ -23,11 +23,10 @@ require_once 'db.php';
         <div class="container">
             <ul class="list-group">
                 <?php foreach($productions as $production):?>
-                    <li class="list-group-item">>
-                        Title: <?php echo $production->getTitle();?><br>
-                        Language: <?php echo $production->getLanguage();?><br>
-                        Vote: <?php echo $production->getVote();?><br><br>
-
+                    <li class="list-group-item">
+                        <strong>Title</strong>: <?php echo $production->getTitle();?><br>
+                        <strong>Language</strong>: <?php echo $production->getLanguage();?><br>
+                        <strong>Vote</strong>: <?php echo $production->getVote();?><br><br>
                     </li>
                 <?php endforeach;?>
             </ul>
