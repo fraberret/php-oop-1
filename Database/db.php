@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../Models/Productions.php';
+require __DIR__ . '/../Models/Movie.php';
 
 
 $movies =[

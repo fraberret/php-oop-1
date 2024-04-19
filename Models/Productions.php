@@ -25,33 +25,8 @@ class Production{
 
 }
 
-class Movie extends Production{
-
-    public $profitti;
-    public $durata;
-
-    public function getProfitti(){
-        return $this->profitti; 
-    }
-        public function getDurata(){
-            return $this->durata; 
-    }
-
-    public function __construct($title, $language, $vote, $profitti, $durata) {
-        
-        parent::__construct($title, $language, $vote);
-        $this->profitti = $profitti;
-        $this->durata = $durata;
-    }
 
 
-
-
-
-}
-
-$productions= new Production("Harry Potter e Il Calice Di Fuoco", "Italiano", 8);
-    
 
 
 
