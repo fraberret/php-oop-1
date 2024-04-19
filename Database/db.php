@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/../Models/Movie.php';
+require __DIR__ . '/../Models/SerieTv.php';
 
 
 $movies =[
@@ -8,7 +9,9 @@ $movies =[
     new Movie("Natale A Miami", "Italiano", 9 , "896", "153" ),
 ];
 
+$serieTv =new SerieTv ("cia", "cia", "cia", "cia",);
 
+?>
 
 
 
