@@ -5,7 +5,7 @@ class Production{
     public $language;
     public $vote;
 
-public function getTitle(){
+    public function getTitle(){
         return $this->title; 
     }
     public function getLanguage(){

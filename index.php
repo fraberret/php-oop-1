@@ -21,15 +21,21 @@ require_once 'db.php';
 
     <main>
         <div class="container">
-            <ul class="list-group">
+            <div class="row">
                 <?php foreach($productions as $production):?>
-                    <li class="list-group-item">
-                        <strong>Title</strong>: <?php echo $production->getTitle();?><br>
-                        <strong>Language</strong>: <?php echo $production->getLanguage();?><br>
-                        <strong>Vote</strong>: <?php echo $production->getVote();?><br><br>
-                    </li>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                           
+                                <h3 class="card-title"><?php echo $production->getTitle();?></h3>
+                                <p>Language: <?php echo $production->getLanguage();?>
+                                <p>Vote: <?php echo $production->getVote();?>
+                            
+                            </div>
+                        </div>
+                    </div>
                 <?php endforeach;?>
-            </ul>
+            </div>
         </div>
     </main>
 </body>
