@@ -22,14 +22,16 @@ require 'Database/db.php';
         <main>
             <div class="container">
                 <div class="row">
-                    <?php foreach($productions as $production):?>
+                    <?php foreach($movies as $movie):?>
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
                             
-                                    <h3 class="card-title"><?php echo $production->getTitle();?></h3>
-                                    <p>Language: <?php echo $production->getLanguage();?>
-                                    <p>Vote: <?php echo $production->getVote();?>
+                                    <h3 class="card-title"><?php echo $movie->getTitle();?></h3>
+                                    <p>Language: <?php echo $movie->getLanguage();?>
+                                    <p>Vote: <?php echo $movie->getVote();?>
+                                    <p>Profitti: <?php echo $movie->getProfitti();?> Milioni di €
+                                    <p>Durata: <?php echo $movie->getDurata();?> Minuti
                         
                                 </div>
                             </div>

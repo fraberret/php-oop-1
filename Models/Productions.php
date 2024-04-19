@@ -37,8 +37,9 @@ class Movie extends Production{
             return $this->durata; 
     }
 
-    public function __construct($profitti, $durata) {
+    public function __construct($title, $language, $vote, $profitti, $durata) {
         
+        parent::__construct($title, $language, $vote);
         $this->profitti = $profitti;
         $this->durata = $durata;
     }
@@ -55,8 +56,7 @@ $productions= new Production("Harry Potter e Il Calice Di Fuoco", "Italiano", 8)
 
 
 
-$movie=new Movie("100", "1");
-var_dump($movie);
+
 
 ?>
 
