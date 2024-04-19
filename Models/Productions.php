@@ -25,18 +25,31 @@ class Production{
 
 }
 
-class Movie extends Production
-{
-    public $profitti='1';
+class Movie extends Production{
+
+    public $profitti;
     public $durata;
 
     public function getProfitti(){
         return $this->profitti; 
     }
+        public function getDurata(){
+            return $this->durata; 
+    }
+
+    public function __construct($profitti, $durata) {
+        $this->profitti = $profitti;
+        $this->durata = $durata;
+    }
+
+
 
 
 
 }
 
+$movie=new Movie("100", "1");
+var_dump($movie)
 
+?>
 
