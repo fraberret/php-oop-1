@@ -21,7 +21,26 @@ require 'Database/db.php';
 
         <main>
             <div class="container">
-                <div class="row">
+            <h1>Productions</h1>
+                <div class="row pb-4">
+                    <?php foreach($productions as $production):?>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                            
+                                    <h3 class="card-title"><?php echo $production->getTitle();?></h3>
+                                    <p>Language: <?php echo $production->getLanguage();?>
+                                    <p>Vote: <?php echo $production->getVote();?>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach;?>
+                </div>
+            
+            
+                <h1>Movies</h1>
+                <div class="row pb-4">
                     <?php foreach($movies as $movie):?>
                         <div class="col">
                             <div class="card">
@@ -38,6 +57,25 @@ require 'Database/db.php';
                         </div>
                     <?php endforeach;?>
                 </div>
+                    
+                <h1>Tv Series</h1>
+                <div class="row pb-4">
+                    <?php foreach($serieTv as $serieTv):?>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                            
+                                    <h3 class="card-title"><?php echo $serieTv->getTitle();?></h3>
+                                    <p>Language: <?php echo $serieTv->getLanguage();?>
+                                    <p>Vote: <?php echo $serieTv->getVote();?>
+                                    <p>Numero Stagioni: <?php echo $serieTv->getStagioni();?> 
+            
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach;?>
+                </div>
+                
             </div>
         </main>
     </body>

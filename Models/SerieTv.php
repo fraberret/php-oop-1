@@ -1,6 +1,6 @@
 <?php
 
-require 'Models/Productions.php';
+require_once __DIR__ . '/Production.php';
 
 class SerieTv extends Production{
 

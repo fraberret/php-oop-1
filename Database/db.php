@@ -1,7 +1,14 @@
 <?php
 
-require __DIR__ . '/../Models/Movie.php';
-require __DIR__ . '/../Models/SerieTv.php';
+include_once __DIR__ . '/../Models/Production.php';
+include_once   __DIR__ . '/../Models/Movie.php';
+include_once  __DIR__ . '/../Models/SerieTv.php';
+
+
+$productions=[
+    new Production ("Star Wars", "Italiano", 10),
+    new Production ("Star Wars", "Italiano", 10)
+];
 
 
 $movies =[
@@ -9,7 +16,11 @@ $movies =[
     new Movie("Natale A Miami", "Italiano", 9 , "896", "153" ),
 ];
 
-$serieTv =new SerieTv ("cia", "cia", "cia", "cia",);
+$serieTv=[ 
+    new SerieTv ("La Casa Di Carta", "Italiano", 5, 8)
+
+];
+
 
 ?>
 
